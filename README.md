@@ -6,6 +6,10 @@ MSP430 assembly counter that displays **00 to 59** on two multiplexed seven-segm
 
 [Watch the original hardware demo on YouTube](https://www.youtube.com/watch?v=_E-E48lryDo)
 
+## Wiring diagram
+
+![Original MSP430 circuit wiring](media/original-wiring.png)
+
 ## How it works
 
 - **R11/R12** hold the units/tens digits. **R10** selects which display to refresh.
