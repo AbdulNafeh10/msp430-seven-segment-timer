@@ -2,7 +2,7 @@
 
 MSP430 assembly counter that displays **00 to 59** on two multiplexed seven-segment displays, then wraps back to **00**. Timer B controls display refresh and the approximate one-second count.
 
-[![MSP430 seven-segment timer demo](https://img.youtube.com/vi/_E-E48lryDo/hqdefault.jpg)](https://www.youtube.com/watch?v=_E-E48lryDo)
+[![MSP430 seven-segment timer demo](https://img.youtube.com/vi/_E-E48lryDo/maxresdefault.jpg)](https://www.youtube.com/watch?v=_E-E48lryDo)
 
 [Watch the original hardware demo on YouTube](https://www.youtube.com/watch?v=_E-E48lryDo)
 
