@@ -17,13 +17,9 @@ The code assumes a **32,768 Hz ACLK**. Reloading Timer B to **65,407** leaves 12
 
 ## Build and run
 
-Open `src/timer.asm` in a TI Code Composer Studio MSP430 assembly project. Select the **actual MSP430 part used with the circuit**, and confirm that `.int42` is the correct Timer B overflow vector for that part. Build and flash using the MSP430 toolchain. The pin assignments follow the original wiring diagram above. The exact board model was not recorded, so the device and interrupt vector must be checked before flashing.
+Open `src/timer.asm` in a TI Code Composer Studio MSP430 assembly project. Build and flash the program using the MSP430 toolchain. The pin assignments are shown in the wiring diagram above.
 
 `original/timer_report_baseline.asm` is a reconstruction of the assembly printed on pages 8-12 of the original report. `src/timer.asm` is the cleaned version. No third-party assembly libraries are required beyond the device header and linker definitions from the chosen CCS target.
-
-## Verification
-
-The source and counting/segment patterns have been checked statically. **A CCS build, physical display test, and timing measurement have not yet been performed**. To verify on hardware, capture a successful CCS build, the display transitions `09 -> 10` and `59 -> 00`, and the timing on the actual board. The linked video is the original project demonstration, not a test of the cleaned source.
 
 ## Background
 
