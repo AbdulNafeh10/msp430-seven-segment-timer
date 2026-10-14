@@ -2,9 +2,9 @@
 
 MSP430 assembly counter that displays **00 to 59** on two multiplexed seven-segment displays, then wraps back to **00**. Timer B controls display refresh and the approximate one-second count.
 
-**Original hardware demo:** [Watch the 00-59 counter running](https://www.youtube.com/watch?v=_E-E48lryDo)
+[![MSP430 seven-segment timer demo](https://img.youtube.com/vi/_E-E48lryDo/hqdefault.jpg)](https://www.youtube.com/watch?v=_E-E48lryDo)
 
-![Original circuit wiring diagram](media/original-wiring.png)
+[Watch the original hardware demo on YouTube](https://www.youtube.com/watch?v=_E-E48lryDo)
 
 ## How it works
 
@@ -17,7 +17,7 @@ The code assumes a **32,768 Hz ACLK**. Reloading Timer B to **65,407** leaves 12
 
 ## Build and run
 
-Open `src/timer.asm` in a TI Code Composer Studio MSP430 assembly project. Build and flash the program using the MSP430 toolchain. The pin assignments are shown in the wiring diagram above.
+Open `src/timer.asm` in a TI Code Composer Studio MSP430 assembly project. Build and flash the program using the MSP430 toolchain. The two displays share the segment lines, with separate digit-select outputs.
 
 `original/timer_report_baseline.asm` is a reconstruction of the assembly printed on pages 8-12 of the original report. `src/timer.asm` is the cleaned version. No third-party assembly libraries are required beyond the device header and linker definitions from the chosen CCS target.
 
